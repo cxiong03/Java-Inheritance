@@ -1,0 +1,24 @@
+package com.codewithchang;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Adder a = new Adder();
+
+        // Print the name of the superclass on a new line
+        System.out.println("My superclass is: " + a.getClass().getSuperclass().getName());
+
+        // Print the result of 3 calls to Adder's `add(int,int)` method as 3 space-separated integers:
+        System.out.print(a.ar.add(10,32) + " " + a.add(10,3) + " " + a.add(10,10) + "\n");
+}
+}
+class Arithmetic {
+    public int add (int A, int B) {
+        return A + B;
+    }
+}
+
+class Adder {
+    public Arithmetic ar = new Arithmetic();
+}
